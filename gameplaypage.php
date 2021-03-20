@@ -176,27 +176,27 @@ else if(isset($_POST['movi']) && $_POST['movi'] == "400"){
 					</tr>
 					<tr>
 						<!--100 Topics-->
-						<?= $hist100tag1 ?> <td><input type = "submit" name = "hist" value = "100" <?= $questionlock ?> ></td> <?= $hist100tag2 ?>
-						<?= $movi100tag1 ?> <td><input type = "submit" name = "movi" value = "100" <?= $questionlock ?> ></td> <?= $movi100tag2 ?>
+						 <td> <?= $hist100tag1 ?> <input type = "submit" name = "hist" value = "100" <?= $questionlock ?>> <?= $hist100tag2 ?> </td>
+						 <td> <?= $movi100tag1 ?> <input type = "submit" name = "movi" value = "100" <?= $questionlock ?>> <?= $movi100tag2 ?> </td>
 					</tr>
 					<tr>
 						<!--200 Topics-->
-						<?= $hist200tag1 ?> <td><input type = "submit" name = "hist"  value = "200" <?= $questionlock ?>></td> <?= $hist200tag2 ?>
-						<?= $movi200tag1 ?> <td><input type = "submit" name = "movi"  value = "200" <?= $questionlock ?>></td> <?= $movi200tag2 ?>
+						 <td> <?= $hist200tag1 ?> <input type = "submit" name = "hist"  value = "200" <?= $questionlock ?>> <?= $hist200tag2 ?> </td>
+						 <td> <?= $movi200tag1 ?> <input type = "submit" name = "movi"  value = "200" <?= $questionlock ?>> <?= $movi200tag2 ?> </td> 
 					</tr>
 					<tr>
 						<!-- 300 Topics-->
-						<?= $hist300tag1 ?> <td><input type = "submit" name = "hist"  value = "300" <?= $questionlock ?>></td> <?= $hist300tag2 ?>
-						<?= $movi300tag1 ?> <td><input type = "submit" name = "movi"  value = "300" <?= $questionlock ?>></td> <?= $movi300tag2 ?>
+						 <td> <?= $hist300tag1 ?> <input type = "submit" name = "hist"  value = "300" <?= $questionlock ?>> <?= $hist300tag2 ?> </td>
+						 <td> <?= $movi300tag1 ?> <input type = "submit" name = "movi"  value = "300" <?= $questionlock ?>> <?= $movi300tag2 ?> </td>
 					</tr>
 					<tr>
 						<!--400 Topics-->
-						<?= $hist400tag1 ?> <td><input type = "submit" name = "hist"  value = "400" <?= $questionlock ?>></td> <?= $hist400tag2 ?>
-						<?= $movi400tag1 ?> <td><input type = "submit" name = "movi"  value = "400" <?= $questionlock ?>></td> <?= $movi400tag2 ?>
+						 <td> <?= $hist400tag1 ?> <input type = "submit" name = "hist"  value = "400" <?= $questionlock ?>> <?= $hist400tag2 ?> </td>
+						 <td> <?= $movi400tag1 ?> <input type = "submit" name = "movi"  value = "400" <?= $questionlock ?>> <?= $movi400tag2 ?> </td> 
 					</tr>
 				</table>
 			</form>
-		</div
+		</div>
 		<br/>
 		<br/>
 		<div class = "flexdiv">
