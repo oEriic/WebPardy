@@ -24,6 +24,24 @@ $movi300tag1 = "";
 $movi300tag2 = "";
 $movi400tag1 = "";
 $movi400tag2 = "";
+//Animals
+$ani100tag1 = "";
+$ani100tag2 = "";
+$ani200tag1 = "";
+$ani200tag2 = "";
+$ani300tag1 = "";
+$ani300tag2 = "";
+$ani400tag1 = "";
+$ani400tag2 = "";
+//Dogs
+$dogs100tag1 = "";
+$dogs100tag2 = "";
+$dogs200tag1 = "";
+$dogs200tag2 = "";
+$dogs300tag1 = "";
+$dogs300tag2 = "";
+$dogs400tag1 = "";
+$dogs400tag2 = "";
 
 //Final
 $finaltag1 = "";
@@ -99,6 +117,7 @@ if($playerturn == 4){
 	$questiontext = "Player 4, pick a question!";
 }
 
+//Questions 
 // History 
 if(isset($_POST['hist']) && $_POST['hist'] == "100"){
 	$questionlock = "disabled";
@@ -151,6 +170,58 @@ else if(isset($_POST['movi']) && $_POST['movi'] == "400"){
 	$questiontext = "There was no Toy Story 6. True or False";
 }
 
+//Animal
+if(isset($_POST['ani']) && $_POST['ani'] == "100"){
+	$questionlock = "disabled";
+	$questiontype = "ani100";
+	$questionweight = 100;
+	$questiontext = "What is the longest living land animal?";
+}
+else if(isset($_POST['ani']) && $_POST['ani'] == "200"){
+	$questionlock = "disabled";
+	$questiontype = "ani200";
+	$questionweight = 200;
+	$questiontext = "What is the largest mammal?";
+}
+else if(isset($_POST['ani']) && $_POST['ani'] == "300"){
+	$questionlock = "disabled";
+	$questiontype = "ani300";
+	$questionweight = 300;
+	$questiontext = "Can the Basenji dog bark?";
+}
+else if(isset($_POST['ani']) && $_POST['ani'] == "400"){
+	$questionlock = "disabled";
+	$questiontype = "ani400";
+	$questionweight = 400;
+	$questiontext = "Are a group of orcas called a pod?";
+}
+
+//Dog
+if(isset($_POST['dogs']) && $_POST['dogs'] == "100"){
+	$questionlock = "disabled";
+	$questiontype = "dogs100";
+	$questionweight = 100;
+	$questiontext = "True or False, Is chocolate good for dogs?";
+}
+else if(isset($_POST['dogs']) && $_POST['dogs'] == "200"){
+	$questionlock = "disabled";
+	$questiontype = "dogs200";
+	$questionweight = 200;
+	$questiontext = "What breed is known to be a wiener dog?";
+}
+else if(isset($_POST['dogs']) && $_POST['dogs'] == "300"){
+	$questionlock = "disabled";
+	$questiontype = "dogs300";
+	$questionweight = 300;
+	$questiontext = "What breed is known for having a heart butt?";
+}
+else if(isset($_POST['dogs']) && $_POST['dogs'] == "400"){
+	$questionlock = "disabled";
+	$questiontype = "dogs400";
+	$questionweight = 400;
+	$questiontext = "True or False, can dogs only see in black and white?";
+}
+
 ?>
 <html lang = "en">
 	<head>
@@ -173,26 +244,36 @@ else if(isset($_POST['movi']) && $_POST['movi'] == "400"){
 						<!--Topic-->
 						<td>History</td>
 						<td>Movies</td>
+						<td>Animals</td>
+						<td>Dogs</td>
 					</tr>
 					<tr>
 						<!--100 Topics-->
 						 <td> <?= $hist100tag1 ?> <input type = "submit" name = "hist" value = "100" <?= $questionlock ?>> <?= $hist100tag2 ?> </td>
 						 <td> <?= $movi100tag1 ?> <input type = "submit" name = "movi" value = "100" <?= $questionlock ?>> <?= $movi100tag2 ?> </td>
+						 <td> <?= $ani100tag1 ?> <input type = "submit" name = "ani" value = "100" <?= $questionlock ?>> <?= $ani100tag2 ?> </td>
+						 <td> <?= $dogs100tag1 ?> <input type = "submit" name = "dogs" value = "100" <?= $questionlock ?>> <?= $dogs100tag2 ?> </td>
 					</tr>
 					<tr>
 						<!--200 Topics-->
 						 <td> <?= $hist200tag1 ?> <input type = "submit" name = "hist"  value = "200" <?= $questionlock ?>> <?= $hist200tag2 ?> </td>
 						 <td> <?= $movi200tag1 ?> <input type = "submit" name = "movi"  value = "200" <?= $questionlock ?>> <?= $movi200tag2 ?> </td> 
+						 <td> <?= $ani200tag1 ?> <input type = "submit" name = "ani"  value = "200" <?= $questionlock ?>> <?= $ani200tag2 ?> </td> 
+						 <td> <?= $dogs200tag1 ?> <input type = "submit" name = "dogs"  value = "200" <?= $questionlock ?>> <?= $dogs200tag2 ?> </td> 
 					</tr>
 					<tr>
 						<!-- 300 Topics-->
 						 <td> <?= $hist300tag1 ?> <input type = "submit" name = "hist"  value = "300" <?= $questionlock ?>> <?= $hist300tag2 ?> </td>
 						 <td> <?= $movi300tag1 ?> <input type = "submit" name = "movi"  value = "300" <?= $questionlock ?>> <?= $movi300tag2 ?> </td>
+						 <td> <?= $ani300tag1 ?> <input type = "submit" name = "ani"  value = "300" <?= $questionlock ?>> <?= $ani300tag2 ?> </td>
+						 <td> <?= $dogs300tag1 ?> <input type = "submit" name = "dogs"  value = "300" <?= $questionlock ?>> <?= $dogs300tag2 ?> </td>
 					</tr>
 					<tr>
 						<!--400 Topics-->
 						 <td> <?= $hist400tag1 ?> <input type = "submit" name = "hist"  value = "400" <?= $questionlock ?>> <?= $hist400tag2 ?> </td>
-						 <td> <?= $movi400tag1 ?> <input type = "submit" name = "movi"  value = "400" <?= $questionlock ?>> <?= $movi400tag2 ?> </td> 
+						 <td> <?= $movi400tag1 ?> <input type = "submit" name = "movi"  value = "400" <?= $questionlock ?>> <?= $movi400tag2 ?> </td>
+						 <td> <?= $ani400tag1 ?> <input type = "submit" name = "ani"  value = "400" <?= $questionlock ?>> <?= $ani400tag2 ?> </td> 
+						 <td> <?= $dogs400tag1 ?> <input type = "submit" name = "dogs"  value = "400" <?= $questionlock ?>> <?= $dogs400tag2 ?> </td>
 					</tr>
 				</table>
 			</form>

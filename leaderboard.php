@@ -19,8 +19,7 @@ if(isset($_POST['questiontype'])){
 							$remainingquestions = file_get_contents("remainingquestions.txt");
 							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
 						}
-						break;
-						
+						break;		
 			case "hist200":
 						if(isset($_POST['answer']) && $_POST['answer'] == "Winston Churchill"){ 
 							$correctText = "Winston Churchill, is Correct! +200";
@@ -91,6 +90,96 @@ if(isset($_POST['questiontype'])){
 			case "movi400":
 						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "true"){ 
 							$correctText = "True is Correct! +400 Points";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player1score = file_get_contents("player1score.txt");
+							file_put_contents('player1score.txt', $player1score + $_POST['questionweight']);
+							$player1score = file_get_contents("player1score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			//Animal
+			case "ani100":
+				if(isset($_POST['answer']) && strtolower($_POST['answer']) == "tortoise"){ 
+					$correctText = "Tortoise is Correct! +100 Points";
+					file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+					$player1score = file_get_contents("player1score.txt");
+					file_put_contents('player1score.txt', $player1score + $_POST['questionweight']);
+					$player1score = file_get_contents("player1score.txt");
+					$remainingquestions = file_get_contents("remainingquestions.txt");
+					file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+				}
+				break;
+			case "ani200":
+						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "blue whale"){
+							$correctText = "Blue Whale is Correct! +200 Points";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player1score = file_get_contents("player1score.txt");
+							file_put_contents('player1score.txt', $player1score + $_POST['questionweight']);
+							$player1score = file_get_contents("player1score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "ani300":
+						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "no"){
+							$correctText = "No is Correct! +300 Points";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player1score = file_get_contents("player1score.txt");
+							file_put_contents('player1score.txt', $player1score + $_POST['questionweight']);
+							$player1score = file_get_contents("player1score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "ani400":
+						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "yes"){ 
+							$correctText = "Yes is Correct! +400 Points";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player1score = file_get_contents("player1score.txt");
+							file_put_contents('player1score.txt', $player1score + $_POST['questionweight']);
+							$player1score = file_get_contents("player1score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			//Dog
+			case "dog100":
+				if(isset($_POST['answer']) && strtolower($_POST['answer']) == "false"){ 
+					$correctText = "False is Correct! +100 Points";
+					file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+					$player1score = file_get_contents("player1score.txt");
+					file_put_contents('player1score.txt', $player1score + $_POST['questionweight']);
+					$player1score = file_get_contents("player1score.txt");
+					$remainingquestions = file_get_contents("remainingquestions.txt");
+					file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+				}
+				break;
+			case "dog200":
+						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "dachshund"){
+							$correctText = "Dachshund is Correct! +200 Points";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player1score = file_get_contents("player1score.txt");
+							file_put_contents('player1score.txt', $player1score + $_POST['questionweight']);
+							$player1score = file_get_contents("player1score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "dog300":
+						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "corgi"){
+							$correctText = "Corgi is Correct! +300 Points";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player1score = file_get_contents("player1score.txt");
+							file_put_contents('player1score.txt', $player1score + $_POST['questionweight']);
+							$player1score = file_get_contents("player1score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "dog400":
+						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "false"){ 
+							$correctText = "False is Correct! +400 Points";
 							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
 							$player1score = file_get_contents("player1score.txt");
 							file_put_contents('player1score.txt', $player1score + $_POST['questionweight']);
@@ -193,6 +282,96 @@ if(isset($_POST['questiontype'])){
 							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
 						}
 						break;
+			//Animals			
+			case "ani100":
+						if(isset($_POST['answer']) && $_POST['answer'] == "tortoise"){ 
+							$correctText = "Tortise, is Correct! +100";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player2score = file_get_contents("player2score.txt");
+							file_put_contents('player2score.txt', $player2score + $_POST['questionweight']);
+							$player2score = file_get_contents("player2score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "ani200":
+						if(isset($_POST['answer']) && $_POST['answer'] == "blue whale"){ 
+							$correctText = "Blue Whale, is Correct! +200";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player2score = file_get_contents("player2score.txt");
+							file_put_contents('player2score.txt', $player2score + $_POST['questionweight']);
+							$player2score = file_get_contents("player2score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "ani300":
+						if(isset($_POST['answer']) && $_POST['answer'] == "no"){ 
+							$correctText = "No, is Correct! +300";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player2score = file_get_contents("player2score.txt");
+							file_put_contents('player2score.txt', $player2score + $_POST['questionweight']);
+							$player2score = file_get_contents("player2score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "ani400":
+						if(isset($_POST['answer']) && $_POST['answer'] == "yes"){ 
+							$correctText = "Yes, is Correct! +400";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player2score = file_get_contents("player2score.txt");
+							file_put_contents('player2score.txt', $player2score + $_POST['questionweight']);
+							$player2score = file_get_contents("player2score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			//Dog
+			case "dog100":
+						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "false"){ 
+							$correctText = "false is Correct! +100 Points";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player2score = file_get_contents("player2score.txt");
+							file_put_contents('player2score.txt', $player2score + $_POST['questionweight']);
+							$player2score = file_get_contents("player2score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "dog200":
+						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "dachshund"){
+							$correctText = "Dachshund is Correct! +200 Points";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player2score = file_get_contents("player2score.txt");
+							file_put_contents('player2score.txt', $player2score + $_POST['questionweight']);
+							$player2score = file_get_contents("player2score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "dog300":
+						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "corgi"){
+							$correctText = "Corgi is Correct! +300 Points";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player2score = file_get_contents("player2score.txt");
+							file_put_contents('player2score.txt', $player2score + $_POST['questionweight']);
+							$player2score = file_get_contents("player2score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "dog400":
+						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "false"){ 
+							$correctText = "False is Correct! +400 Points";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player2score = file_get_contents("player2score.txt");
+							file_put_contents('player2score.txt', $player2score + $_POST['questionweight']);
+							$player2score = file_get_contents("player2score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;						
 		}
 	file_put_contents("playerturn.txt",3);
 	}
@@ -279,6 +458,96 @@ if(isset($_POST['questiontype'])){
 			case "movi400":
 						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "true"){ 
 							$correctText = "True is Correct! +400 Points";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player3score = file_get_contents("player3score.txt");
+							file_put_contents('player3score.txt', $player3score + $_POST['questionweight']);
+							$player3score = file_get_contents("player3score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			//Animals			
+			case "ani100":
+				if(isset($_POST['answer']) && $_POST['answer'] == "tortoise"){ 
+					$correctText = "Tortise, is Correct! +100";
+					file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+					$player3score = file_get_contents("player3score.txt");
+					file_put_contents('player3score.txt', $player3score + $_POST['questionweight']);
+					$player3score = file_get_contents("player3score.txt");
+					$remainingquestions = file_get_contents("remainingquestions.txt");
+					file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+				}
+						break;
+			case "ani200":
+						if(isset($_POST['answer']) && $_POST['answer'] == "blue whale"){ 
+							$correctText = "Blue Whale, is Correct! +200";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player3score = file_get_contents("player3score.txt");
+							file_put_contents('player3score.txt', $player3score + $_POST['questionweight']);
+							$player3score = file_get_contents("player3score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "ani300":
+						if(isset($_POST['answer']) && $_POST['answer'] == "no"){ 
+							$correctText = "No, is Correct! +300";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player3score = file_get_contents("player3score.txt");
+							file_put_contents('player3score.txt', $player3score + $_POST['questionweight']);
+							$player3score = file_get_contents("player3score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "ani400":
+						if(isset($_POST['answer']) && $_POST['answer'] == "yes"){ 
+							$correctText = "Yes, is Correct! +400";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player3score = file_get_contents("player3score.txt");
+							file_put_contents('player3score.txt', $player3score + $_POST['questionweight']);
+							$player3score = file_get_contents("player3score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			//Dog
+			case "dog100":
+						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "false"){ 
+							$correctText = "false is Correct! +100 Points";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player3score = file_get_contents("player3score.txt");
+							file_put_contents('player3score.txt', $player3score + $_POST['questionweight']);
+							$player3score = file_get_contents("player3score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "dog200":
+						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "dachshund"){
+							$correctText = "Dachshund is Correct! +200 Points";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player3score = file_get_contents("player3score.txt");
+							file_put_contents('player3score.txt', $player3score + $_POST['questionweight']);
+							$player3score = file_get_contents("player3score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "dog300":
+						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "corgi"){
+							$correctText = "Corgi is Correct! +300 Points";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player3score = file_get_contents("player3score.txt");
+							file_put_contents('player3score.txt', $player3score + $_POST['questionweight']);
+							$player3score = file_get_contents("player3score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "dog400":
+						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "false"){ 
+							$correctText = "False is Correct! +400 Points";
 							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
 							$player3score = file_get_contents("player3score.txt");
 							file_put_contents('player3score.txt', $player3score + $_POST['questionweight']);
@@ -374,6 +643,96 @@ if(isset($_POST['questiontype'])){
 			case "movi400":
 						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "true"){ 
 							$correctText = "True is Correct! +400 Points";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player4score = file_get_contents("player4score.txt");
+							file_put_contents('player4score.txt', $player4score + $_POST['questionweight']);
+							$player4score = file_get_contents("player4score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			//Animals			
+			case "ani100":
+						if(isset($_POST['answer']) && $_POST['answer'] == "tortoise"){ 
+							$correctText = "Tortise, is Correct! +100";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player4score = file_get_contents("player4score.txt");
+							file_put_contents('player4score.txt', $player4score + $_POST['questionweight']);
+							$player4score = file_get_contents("player4score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "ani200":
+						if(isset($_POST['answer']) && $_POST['answer'] == "blue whale"){ 
+							$correctText = "Blue Whale, is Correct! +200";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player4score = file_get_contents("player4score.txt");
+							file_put_contents('player4score.txt', $player4score + $_POST['questionweight']);
+							$player4score = file_get_contents("player4score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "ani300":
+						if(isset($_POST['answer']) && $_POST['answer'] == "no"){ 
+							$correctText = "No, is Correct! +300";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player4score = file_get_contents("player4score.txt");
+							file_put_contents('player4score.txt', $player4score + $_POST['questionweight']);
+							$player4score = file_get_contents("player4score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "ani400":
+						if(isset($_POST['answer']) && $_POST['answer'] == "yes"){ 
+							$correctText = "Yes, is Correct! +400";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player4score = file_get_contents("player4score.txt");
+							file_put_contents('player4score.txt', $player4score + $_POST['questionweight']);
+							$player4score = file_get_contents("player4score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			//Dog
+			case "dog100":
+						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "false"){ 
+							$correctText = "false is Correct! +100 Points";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player4score = file_get_contents("player4score.txt");
+							file_put_contents('player4score.txt', $player4score + $_POST['questionweight']);
+							$player4score = file_get_contents("player4score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "dog200":
+						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "dachshund"){
+							$correctText = "Dachshund is Correct! +200 Points";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player4score = file_get_contents("player4score.txt");
+							file_put_contents('player4score.txt', $player4score + $_POST['questionweight']);
+							$player4score = file_get_contents("player4score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "dog300":
+						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "corgi"){
+							$correctText = "Corgi is Correct! +300 Points";
+							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
+							$player4score = file_get_contents("player4score.txt");
+							file_put_contents('player4score.txt', $player4score + $_POST['questionweight']);
+							$player4score = file_get_contents("player4score.txt");
+							$remainingquestions = file_get_contents("remainingquestions.txt");
+							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
+						}
+						break;
+			case "dog400":
+						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "false"){ 
+							$correctText = "False is Correct! +400 Points";
 							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
 							$player4score = file_get_contents("player4score.txt");
 							file_put_contents('player4score.txt', $player4score + $_POST['questionweight']);
