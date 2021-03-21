@@ -52,7 +52,7 @@
             </div>
           <?php
         } else{
-          header("Location: gamepage.php");
+          header("Location: gameplaypage.php");
         }
       }
     }
