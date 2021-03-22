@@ -117,7 +117,7 @@ if(str_contains(file_get_contents('answeredquestions.txt'),"ani400")){
 
 //Dogs
 if(str_contains(file_get_contents('answeredquestions.txt'),"dogs100")){
-	$dogsi100tag1 = "<!--";
+	$dogs100tag1 = "<!--";
 	$dogs100tag2 = "-->";
 }
 if(str_contains(file_get_contents('answeredquestions.txt'),"dogs200")){
