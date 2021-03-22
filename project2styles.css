@@ -13,8 +13,9 @@ td{text-align: center;
 	  width: 100px;
 	  height: 50px;}
 #logout{
-	border: 5px solid #ffcc00;
 	text-align: left;
 	border-style: ridge;
 	padding: 5px;
+	padding-right: 50%;
+	width: 30px;
 }
