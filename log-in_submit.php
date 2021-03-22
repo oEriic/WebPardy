@@ -1,5 +1,8 @@
+<?php 
+  // session start
+  session_start();
+?>
 <html>
-
   <head>
     <title> Jeopardy </title>
     <link rel = "stylesheet" href = "css.css">
@@ -28,6 +31,7 @@
     <?php
     } else{
       for ($i = 0; $i < count($file1); $i++){
+        $_SESSION['userApprove'] = "approve";
         $user_input = strstr($file1[$i], $username);
         if($user_input !== false) {
           break;

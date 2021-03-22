@@ -1,5 +1,13 @@
 <!DOCTYPE HTML>
 <?php
+//session start
+session_start();
+
+// checking if username is approved
+if($_SESSION['userApprove'] != "approve"){
+	header("Location: homepage.php");
+}
+
 $playerturn = file_get_contents('playerturn.txt');
 $turnboxtext = "";
 $questionlock = "";
@@ -266,6 +274,9 @@ else if(isset($_POST['dogs']) && $_POST['dogs'] == "400"){
 		<title>WebPardy</title>
 	</head>
 	<body>
+		<div id = "logout">
+			<a href="homepage.php"> Log Out </a>
+		</div>
 		<div class = "flexdiv">
 			<div id = "playerturnbox">
 				<?= $turnboxtext ?>

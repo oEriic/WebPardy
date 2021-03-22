@@ -1,5 +1,10 @@
-<html>
+<?php
+  session_start();
+  //clears session variable 
+  session_destroy();
+?>
 
+<html>
   <head>
     <title> Jeopardy </title>
     <link rel = "stylesheet" href = "css.css">
