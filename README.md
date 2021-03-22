@@ -1,5 +1,7 @@
 # WebPardy
+
 Leader: Eric Oh
+
 Members: Gayoung Kim, Vincent Lee, SingYu Yu
 
 This is a website made based on the game Jeopardy! created for a project in a web development class.
