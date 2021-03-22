@@ -71,7 +71,7 @@ if(str_contains(file_get_contents('answeredquestions.txt'),"hist400")){
 		$hist400tag2 = "-->";
 }
 
-  //Movies
+//Movies
 if(str_contains(file_get_contents('answeredquestions.txt'),"movi100")){
 	$movi100tag1 = "<!--";
 	$movi100tag2 = "-->";
@@ -87,6 +87,42 @@ if(str_contains(file_get_contents('answeredquestions.txt'),"movi300")){
 if(str_contains(file_get_contents('answeredquestions.txt'),"movi400")){
 	$movi400tag1 = "<!--";
 	$movi400tag2 = "-->";
+}
+
+//Animals
+if(str_contains(file_get_contents('answeredquestions.txt'),"ani100")){
+	$ani100tag1 = "<!--";
+	$ani100tag2 = "-->";
+}
+if(str_contains(file_get_contents('answeredquestions.txt'),"ani200")){
+	$ani200tag1 = "<!--";
+	$ani200tag2 = "-->";
+}
+if(str_contains(file_get_contents('answeredquestions.txt'),"ani300")){
+	$ani300tag1 = "<!--";
+	$ani300tag2 = "-->";
+}
+if(str_contains(file_get_contents('answeredquestions.txt'),"ani400")){
+	$ani400tag1 = "<!--";
+	$ani400tag2 = "-->";
+}
+
+//Dogs
+if(str_contains(file_get_contents('answeredquestions.txt'),"dogs100")){
+	$dogsi100tag1 = "<!--";
+	$dogs100tag2 = "-->";
+}
+if(str_contains(file_get_contents('answeredquestions.txt'),"dogs200")){
+	$dogs200tag1 = "<!--";
+	$dogs200tag2 = "-->";
+}
+if(str_contains(file_get_contents('answeredquestions.txt'),"dogs300")){
+	$dogs300tag1 = "<!--";
+	$dogs300tag2 = "-->";
+}
+if(str_contains(file_get_contents('answeredquestions.txt'),"dogs400")){
+	$dogs400tag1 = "<!--";
+	$dogs400tag2 = "-->";
 }
 
 // Final Round

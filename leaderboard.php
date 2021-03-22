@@ -143,8 +143,8 @@ if(isset($_POST['questiontype'])){
 							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
 						}
 						break;
-			//Dog
-			case "dog100":
+			//dogs
+			case "dogs100":
 				if(isset($_POST['answer']) && strtolower($_POST['answer']) == "false"){ 
 					$correctText = "False is Correct! +100 Points";
 					file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
@@ -155,7 +155,7 @@ if(isset($_POST['questiontype'])){
 					file_put_contents('remainingquestions.txt', $remainingquestions - 1);
 				}
 				break;
-			case "dog200":
+			case "dogs200":
 						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "dachshund"){
 							$correctText = "Dachshund is Correct! +200 Points";
 							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
@@ -166,7 +166,7 @@ if(isset($_POST['questiontype'])){
 							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
 						}
 						break;
-			case "dog300":
+			case "dogs300":
 						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "corgi"){
 							$correctText = "Corgi is Correct! +300 Points";
 							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
@@ -177,7 +177,7 @@ if(isset($_POST['questiontype'])){
 							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
 						}
 						break;
-			case "dog400":
+			case "dogs400":
 						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "false"){ 
 							$correctText = "False is Correct! +400 Points";
 							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
@@ -327,8 +327,8 @@ if(isset($_POST['questiontype'])){
 							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
 						}
 						break;
-			//Dog
-			case "dog100":
+			//dogs
+			case "dogs100":
 						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "false"){ 
 							$correctText = "false is Correct! +100 Points";
 							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
@@ -339,7 +339,7 @@ if(isset($_POST['questiontype'])){
 							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
 						}
 						break;
-			case "dog200":
+			case "dogs200":
 						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "dachshund"){
 							$correctText = "Dachshund is Correct! +200 Points";
 							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
@@ -350,7 +350,7 @@ if(isset($_POST['questiontype'])){
 							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
 						}
 						break;
-			case "dog300":
+			case "dogs300":
 						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "corgi"){
 							$correctText = "Corgi is Correct! +300 Points";
 							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
@@ -361,7 +361,7 @@ if(isset($_POST['questiontype'])){
 							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
 						}
 						break;
-			case "dog400":
+			case "dogs400":
 						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "false"){ 
 							$correctText = "False is Correct! +400 Points";
 							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
@@ -511,8 +511,8 @@ if(isset($_POST['questiontype'])){
 							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
 						}
 						break;
-			//Dog
-			case "dog100":
+			//dogs
+			case "dogs100":
 						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "false"){ 
 							$correctText = "false is Correct! +100 Points";
 							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
@@ -523,7 +523,7 @@ if(isset($_POST['questiontype'])){
 							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
 						}
 						break;
-			case "dog200":
+			case "dogs200":
 						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "dachshund"){
 							$correctText = "Dachshund is Correct! +200 Points";
 							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
@@ -534,7 +534,7 @@ if(isset($_POST['questiontype'])){
 							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
 						}
 						break;
-			case "dog300":
+			case "dogs300":
 						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "corgi"){
 							$correctText = "Corgi is Correct! +300 Points";
 							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
@@ -545,7 +545,7 @@ if(isset($_POST['questiontype'])){
 							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
 						}
 						break;
-			case "dog400":
+			case "dogs400":
 						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "false"){ 
 							$correctText = "False is Correct! +400 Points";
 							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
@@ -696,8 +696,8 @@ if(isset($_POST['questiontype'])){
 							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
 						}
 						break;
-			//Dog
-			case "dog100":
+			//dogs
+			case "dogs100":
 						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "false"){ 
 							$correctText = "false is Correct! +100 Points";
 							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
@@ -708,7 +708,7 @@ if(isset($_POST['questiontype'])){
 							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
 						}
 						break;
-			case "dog200":
+			case "dogs200":
 						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "dachshund"){
 							$correctText = "Dachshund is Correct! +200 Points";
 							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
@@ -719,7 +719,7 @@ if(isset($_POST['questiontype'])){
 							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
 						}
 						break;
-			case "dog300":
+			case "dogs300":
 						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "corgi"){
 							$correctText = "Corgi is Correct! +300 Points";
 							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
@@ -730,7 +730,7 @@ if(isset($_POST['questiontype'])){
 							file_put_contents('remainingquestions.txt', $remainingquestions - 1);
 						}
 						break;
-			case "dog400":
+			case "dogs400":
 						if(isset($_POST['answer']) && strtolower($_POST['answer']) == "false"){ 
 							$correctText = "False is Correct! +400 Points";
 							file_put_contents('answeredquestions.txt',$_POST['questiontype'],FILE_APPEND);
