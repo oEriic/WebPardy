@@ -1,10 +1,14 @@
 # WebPardy
+Leader: Eric Oh
+Members: Gayoung Kim, Vincent Lee, SingYu Yu
 
-To run / test the game on your own local server you must make sure that:
-- All player scores are set to 0, DO NOT LEAVE BLANK you will run into a string error.
-- playerTurn must be reset to 1
-- remainingquestions is set to number of questions at the time of writing this there are only 8 questions
-- answeredquestions needs to be cleared to have questions available for players.
+This is a website made based on the game Jeopardy! created for a project in a web development class.
+
+Using HTML/CSS and PHP only to design the pages and forms and sessions, 
+the project consists of a homepage that allows for signup or login, a main questions page, and a leaderboard page.
+
+It allows for four players to try and answer the questions, and when the users are finished,
+they can log out and the session will be cleared.
 
 
 
