@@ -1,5 +1,11 @@
+Youtube:
+
+
 Codd:
 https://codd.cs.gsu.edu/~user/WebProgramming/ProjectWork/Webpardy/final/index.html
 
 GitHub:
 https://github.com/user/WebPardy
+
+Presentation:
+https://docs.google.com/presentation/d/1hKbee888HAwTfgYGBD2pQR6h8LT47cV3BnFkW2bJs88/edit#slide=id.p
